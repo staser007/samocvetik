@@ -1,0 +1,1 @@
+{{ json_encode(array_merge(['code'=>@ERROR.code, 'description'=>@ERROR.status], @DEBUG>0?['status'=>@ERROR.text, 'trace'=>@ERROR.trace]:[], is_array(@ERRORS)?@ERRORS:[]), JSON_UNESCAPED_UNICODE) }}
